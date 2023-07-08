@@ -12,3 +12,10 @@ var a = 2;
 foo(); // 2
 
 bar(); // TypeError: `this` is `undefined`
+
+const obj = {
+    a: 3,
+    foo: foo,
+}
+
+obj.foo()
